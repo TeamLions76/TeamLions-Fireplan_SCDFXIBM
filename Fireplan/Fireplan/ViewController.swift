@@ -17,11 +17,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         floorPlan1 = FloorPlan(frame: view.frame)
         addRoomsToFloorPlan1()
-        // view.addSubview(floorPlan1)
+        view.addSubview(floorPlan1)
 
         floorPlan2 = FloorPlan(frame: view.frame)
         addRoomsToFloorPlan2()
-        view.addSubview(floorPlan2)
+        //view.addSubview(floorPlan2)
     }
 
     func addRoomsToFloorPlan2() {
