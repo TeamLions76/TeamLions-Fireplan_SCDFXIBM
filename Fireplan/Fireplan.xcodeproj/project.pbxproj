@@ -15,6 +15,8 @@
 		376274252493C3FC00149179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376274232493C3FC00149179 /* LaunchScreen.storyboard */; };
 		376274302493C3FD00149179 /* FireplanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762742F2493C3FD00149179 /* FireplanTests.swift */; };
 		3762743B2493C3FD00149179 /* FireplanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762743A2493C3FD00149179 /* FireplanUITests.swift */; };
+		376274492493C6F000149179 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376274482493C6F000149179 /* Room.swift */; };
+		3762744B2493CA8C00149179 /* FloorPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762744A2493CA8C00149179 /* FloorPlan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		376274362493C3FD00149179 /* FireplanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireplanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3762743A2493C3FD00149179 /* FireplanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireplanUITests.swift; sourceTree = "<group>"; };
 		3762743C2493C3FD00149179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		376274482493C6F000149179 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		3762744A2493CA8C00149179 /* FloorPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				376274182493C3F800149179 /* AppDelegate.swift */,
 				3762741A2493C3F800149179 /* SceneDelegate.swift */,
 				3762741C2493C3F800149179 /* ViewController.swift */,
+				376274482493C6F000149179 /* Room.swift */,
+				3762744A2493CA8C00149179 /* FloorPlan.swift */,
 				3762741E2493C3F800149179 /* Main.storyboard */,
 				376274212493C3FC00149179 /* Assets.xcassets */,
 				376274232493C3FC00149179 /* LaunchScreen.storyboard */,
@@ -261,7 +267,9 @@
 			files = (
 				3762741D2493C3F800149179 /* ViewController.swift in Sources */,
 				376274192493C3F800149179 /* AppDelegate.swift in Sources */,
+				376274492493C6F000149179 /* Room.swift in Sources */,
 				3762741B2493C3F800149179 /* SceneDelegate.swift in Sources */,
+				3762744B2493CA8C00149179 /* FloorPlan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
