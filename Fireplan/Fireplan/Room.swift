@@ -34,6 +34,15 @@ class Room: UIView {
         addSubview(roomLabel)
     }
 
+    func makeTappable() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        addGestureRecognizer(tap)
+    }
+
+    @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
+        observer?.roomIsTapped(room: self)
+    }
+
     required init?(coder: NSCoder) {
         nil
     }

@@ -34,13 +34,23 @@ class ViewController: UIViewController {
         floorPlan2 = FloorPlan(frame: view.frame)
         addRoomsToFloorPlan2()
 
-        rooms.forEach { $0.observer = self }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        setUpRooms()
+        // randomlySetFire(after: 3)
+    }
+
+    func randomlySetFire(after seconds: Int) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             let randomIndex = Int.random(in: 0..<self.rooms.count)
             self.rooms[randomIndex].triggerFire()
         }
     }
 
+    func setUpRooms() {
+        rooms.forEach {
+            $0.observer = self
+            $0.makeTappable()
+        }
+    }
 
     func assignFireTypes(firetypes: [FireType]) {
         allFireTypes = firetypes
@@ -336,5 +346,11 @@ extension ViewController: RoomObserver {
             : UIImage(named: possibleFireTypes[0].extinguishingMethods[0])
         let alertWindow = AlertWindow(text: "FIRE ALERT!", image: extinguisherIcon ?? UIImage())
         view.addSubview(alertWindow)
+    }
+
+    func roomIsTapped(room: Room) {
+        let possibleFireTypes = allFireTypes.filter { $0.locations.contains(room.roomType) }
+        let infoWindow = InfoWindow(room: room, potentialFireTypes: possibleFireTypes)
+        view.addSubview(infoWindow)
     }
 }

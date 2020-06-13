@@ -8,4 +8,6 @@
 
 protocol RoomObserver {
     func roomDidSetOnFire(room: Room)
+
+    func roomIsTapped(room: Room)
 }
