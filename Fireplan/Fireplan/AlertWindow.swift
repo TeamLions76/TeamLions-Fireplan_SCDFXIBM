@@ -19,6 +19,7 @@ class AlertWindow: UIView {
         let modalSize = CGSize(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height / 3 - 10)
         super.init(frame: CGRect(origin: modalOrigin, size: modalSize))
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        alpha = 0.95
         clipsToBounds = true
         layer.cornerRadius = 10
 

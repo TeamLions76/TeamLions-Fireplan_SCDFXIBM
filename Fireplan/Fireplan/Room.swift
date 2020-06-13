@@ -47,9 +47,9 @@ class Room: UIView {
         nil
     }
 
-    func triggerFire() {
+    func triggerFire(fireSize: FireSize) {
         displayLink = CADisplayLink(target: self, selector: #selector(updateAnimation))
-        displayLink?.preferredFramesPerSecond = 15
+        displayLink?.preferredFramesPerSecond = fireSize.rawValue
         displayLink?.add(to: RunLoop.main, forMode: .common)
         observer?.roomDidSetOnFire(room: self)
     }

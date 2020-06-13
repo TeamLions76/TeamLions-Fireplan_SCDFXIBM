@@ -29,6 +29,7 @@
 		3787E5072494BE77003A8169 /* AlertWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5062494BE77003A8169 /* AlertWindow.swift */; };
 		3787E5092494C6AB003A8169 /* RoomObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5082494C6AB003A8169 /* RoomObserver.swift */; };
 		3787E50B2494C76C003A8169 /* AlertObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E50A2494C76C003A8169 /* AlertObserver.swift */; };
+		3787E50F249507FB003A8169 /* FireSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E50E249507FA003A8169 /* FireSize.swift */; };
 		71B841AEC4EC5C95EF67124B /* Pods_Fireplan_FireplanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6981A3E085A0AAFBADC13765 /* Pods_Fireplan_FireplanUITests.framework */; };
 		975303A6839B7F6A09CAE1BF /* Pods_FireplanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1542FC3E8D3E34116FC9727 /* Pods_FireplanTests.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		3787E5062494BE77003A8169 /* AlertWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWindow.swift; sourceTree = "<group>"; };
 		3787E5082494C6AB003A8169 /* RoomObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomObserver.swift; sourceTree = "<group>"; };
 		3787E50A2494C76C003A8169 /* AlertObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertObserver.swift; sourceTree = "<group>"; };
+		3787E50E249507FA003A8169 /* FireSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireSize.swift; sourceTree = "<group>"; };
 		3CA238B387A99E3B3302CE64 /* Pods-Fireplan-FireplanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fireplan-FireplanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fireplan-FireplanUITests/Pods-Fireplan-FireplanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		462366CA65D9C0CA1176C263 /* Pods_Fireplan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fireplan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E731000FE8C69D79460EF0 /* Pods-FireplanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireplanTests.debug.xcconfig"; path = "Target Support Files/Pods-FireplanTests/Pods-FireplanTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				3787E5042494BAB8003A8169 /* RoomType.swift */,
 				372F740F24949AD300E39E47 /* Keys.swift */,
 				3787E5002494B63B003A8169 /* FireType.swift */,
+				3787E50E249507FA003A8169 /* FireSize.swift */,
 				3787E4FE2494B308003A8169 /* InfoWindow.swift */,
 				3787E5062494BE77003A8169 /* AlertWindow.swift */,
 				3787E50A2494C76C003A8169 /* AlertObserver.swift */,
@@ -461,6 +464,7 @@
 				372F740E24949A9F00E39E47 /* Database.swift in Sources */,
 				3787E5072494BE77003A8169 /* AlertWindow.swift in Sources */,
 				3762741D2493C3F800149179 /* ViewController.swift in Sources */,
+				3787E50F249507FB003A8169 /* FireSize.swift in Sources */,
 				3787E5052494BAB8003A8169 /* RoomType.swift in Sources */,
 				3787E5012494B63B003A8169 /* FireType.swift in Sources */,
 				376274192493C3F800149179 /* AppDelegate.swift in Sources */,

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var levelSwitch: ToggleFloorSwitch!
     var rooms: [Room] = []
     var allFireTypes: [FireType] = []
+    var currentlyOpenedInfoWindow: InfoWindow?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,13 +36,15 @@ class ViewController: UIViewController {
         addRoomsToFloorPlan2()
 
         setUpRooms()
-        // randomlySetFire(after: 3)
+        randomlySetFire()
     }
 
-    func randomlySetFire(after seconds: Int) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+    func randomlySetFire() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            let fireSizes: [FireSize] = [.small, .medium, .large]
+            let randomFireIndex = Int.random(in: 0..<fireSizes.count)
             let randomIndex = Int.random(in: 0..<self.rooms.count)
-            self.rooms[randomIndex].triggerFire()
+            self.rooms[randomIndex].triggerFire(fireSize: fireSizes[randomFireIndex])
         }
     }
 
@@ -349,8 +352,10 @@ extension ViewController: RoomObserver {
     }
 
     func roomIsTapped(room: Room) {
+        currentlyOpenedInfoWindow?.removeFromSuperview()
         let possibleFireTypes = allFireTypes.filter { $0.locations.contains(room.roomType) }
         let infoWindow = InfoWindow(room: room, potentialFireTypes: possibleFireTypes)
+        currentlyOpenedInfoWindow = infoWindow
         view.addSubview(infoWindow)
     }
 }
