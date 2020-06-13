@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FloorPlanViewController.swift
 //  Fireplan
 //
 //  Created by Hol Yin Ho on 12/6/20.
@@ -8,25 +8,40 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FloorPlanViewController: UIViewController {
     var floorPlan1: FloorPlan!
     var floorPlan2: FloorPlan!
     var levelSwitch: ToggleFloorSwitch!
     var rooms: [Room] = []
     var allFireTypes: [FireType] = []
     var currentlyOpenedInfoWindow: InfoWindow?
+    var homeLabel: UILabel!
+    var settingsButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.async {
-            Database().readDB(callback: self.assignFireTypes(firetypes:))
-        }
         let height = UIScreen.main.bounds.height
         let width = UIScreen.main.bounds.width
+
+        let iconSide: CGFloat = 40
+
+        homeLabel = UILabel(frame: CGRect(origin: CGPoint(x: 0, y: 5), size: CGSize(width: width, height: 40)))
+        homeLabel.text = "HOME"
+        homeLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        homeLabel.textAlignment = .center
+        homeLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+
+        settingsButton = UIButton(
+            frame: CGRect(origin: CGPoint(x: width - iconSide - 5, y: 10),
+            size: CGSize(width: iconSide, height: iconSide)))
+        settingsButton.setImage(UIImage(named: "Setting"), for: .normal)
+
         // Do any additional setup after loading the view.
         floorPlan1 = FloorPlan(frame: view.frame)
         addRoomsToFloorPlan1()
         view.addSubview(floorPlan1)
+        view.addSubview(homeLabel)
+        view.addSubview(settingsButton)
 
         levelSwitch = ToggleFloorSwitch(origin: CGPoint(x: (width / 2) - 40, y: height - 45))
         levelSwitch.observer = self
@@ -35,8 +50,18 @@ class ViewController: UIViewController {
         floorPlan2 = FloorPlan(frame: view.frame)
         addRoomsToFloorPlan2()
 
+        bindGestureRecgonizers()
+
         setUpRooms()
         randomlySetFire()
+    }
+
+    func bindGestureRecgonizers() {
+        settingsButton.addTarget(self, action: #selector(segueToSettings(_:)), for: .touchUpInside)
+    }
+
+    @objc func segueToSettings(_ sender: UIButton) {
+        performSegue(withIdentifier: "toSettings", sender: sender)
     }
 
     func randomlySetFire() {
@@ -165,7 +190,7 @@ class ViewController: UIViewController {
         floorPlan2.addSubview(balcony)
         rooms.append(balcony)
 
-        ViewController.addStairs(to: floorPlan2)
+        FloorPlanViewController.addStairs(to: floorPlan2)
     }
 
 
@@ -287,7 +312,7 @@ class ViewController: UIViewController {
         floorPlan1.addSubview(diningHall)
         rooms.append(diningHall)
 
-        ViewController.addStairs(to: floorPlan1)
+        FloorPlanViewController.addStairs(to: floorPlan1)
     }
 
     static func addStairs(to floorPlan: FloorPlan) {
@@ -326,28 +351,36 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: SwitchObserver {
+extension FloorPlanViewController: SwitchObserver {
     func didSelectLevel1() {
         floorPlan2.removeFromSuperview()
         view.addSubview(floorPlan1)
         view.bringSubviewToFront(levelSwitch)
+        view.bringSubviewToFront(homeLabel)
+        view.bringSubviewToFront(settingsButton)
     }
 
     func didSelectLevel2() {
         floorPlan1.removeFromSuperview()
         view.addSubview(floorPlan2)
         view.bringSubviewToFront(levelSwitch)
+        view.bringSubviewToFront(homeLabel)
+        view.bringSubviewToFront(settingsButton)
     }
 }
 
-extension ViewController: RoomObserver {
+extension FloorPlanViewController: RoomObserver {
     func roomDidSetOnFire(room: Room) {
         room.level == 1 ? levelSwitch.selectLevel1() : levelSwitch.selectLevel2()
         let possibleFireTypes = allFireTypes.filter { $0.locations.contains(room.roomType) }
         let extinguisherIcon = possibleFireTypes.isEmpty
             ? UIImage(named: "WaterExtinguisher")
             : UIImage(named: possibleFireTypes[0].extinguishingMethods[0])
-        let alertWindow = AlertWindow(text: "FIRE ALERT!", image: extinguisherIcon ?? UIImage())
+        let isEvacuate = room.fireSize == .large
+        let image = isEvacuate ? UIImage(named: "SCDF") : extinguisherIcon
+        let text = isEvacuate ? "EVACUATE!" : "FIRE ALERT!"
+        let alertWindow = AlertWindow(text: text, image: image, isEvacuate: isEvacuate)
+        alertWindow.observer = self
         view.addSubview(alertWindow)
     }
 
@@ -357,5 +390,12 @@ extension ViewController: RoomObserver {
         let infoWindow = InfoWindow(room: room, potentialFireTypes: possibleFireTypes)
         currentlyOpenedInfoWindow = infoWindow
         view.addSubview(infoWindow)
+    }
+}
+
+extension FloorPlanViewController: AlertObserver {
+    func alertDidClose(alert: AlertWindow, isSendLocation: Bool) {
+        let alertInfoWindow = AlertInfoWindow(isSendLocation: isSendLocation)
+        view.addSubview(alertInfoWindow)
     }
 }

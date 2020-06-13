@@ -15,6 +15,7 @@ class Room: UIView {
     private var colorIndex = 0
     var observer: RoomObserver?
     let level: Int
+    var fireSize: FireSize?
 
     init(roomName: String, roomType: RoomType, level: Int, frame: CGRect) {
         self.roomName = roomName
@@ -48,6 +49,7 @@ class Room: UIView {
     }
 
     func triggerFire(fireSize: FireSize) {
+        self.fireSize = fireSize
         displayLink = CADisplayLink(target: self, selector: #selector(updateAnimation))
         displayLink?.preferredFramesPerSecond = fireSize.rawValue
         displayLink?.add(to: RunLoop.main, forMode: .common)

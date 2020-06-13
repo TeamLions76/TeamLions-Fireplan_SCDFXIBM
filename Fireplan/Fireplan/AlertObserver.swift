@@ -7,5 +7,5 @@
 //
 
 protocol AlertObserver {
-    func alertDidClose(alert: AlertWindow)
+    func alertDidClose(alert: AlertWindow, isSendLocation: Bool)
 }

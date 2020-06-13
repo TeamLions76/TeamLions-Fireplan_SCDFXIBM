@@ -8,6 +8,6 @@
 
 enum FireSize: Int {
     case small = 10
-    case medium = 20
-    case large = 30
+    case medium = 30
+    case large = 60
 }

@@ -68,6 +68,12 @@ class InfoWindow: UIView {
 
         var currentYValue = riskInfo.frame.origin.y + riskInfo.frame.height + gap
         if potentialFireTypes.isEmpty {
+            let potentialInfo = UILabel(
+                frame: CGRect(origin: CGPoint(x: header.frame.origin.x + labelCellWidth, y: currentYValue),
+                              size: CGSize(width: infoCellWidth, height: 20)))
+            potentialInfo.text = "-"
+            potentialInfo.font = potentialInfo.font.withSize(15)
+            addSubview(potentialInfo)
             currentYValue = currentYValue + 20
         }
         potentialFireTypes.map { $0.fireType }.forEach {

@@ -9,10 +9,13 @@ import UIKit
 
 class AlertWindow: UIView {
     private let alertText: String
-    private let alertImage: UIImage
-    private var okButton: UILabel!
+    private let alertImage: UIImage?
+    private var okButton: UILabel?
+    private var okEvacuateButton: UILabel?
+    private var sendLocationButton: UILabel?
+    var observer: AlertObserver?
 
-    init(text: String, image: UIImage) {
+    init(text: String, image: UIImage?, isEvacuate: Bool) {
         alertText = text
         alertImage = image
         let modalOrigin = CGPoint(x: 10, y: (2 * UIScreen.main.bounds.height) / 3)
@@ -36,21 +39,50 @@ class AlertWindow: UIView {
         let icon = UIImageView(frame: CGRect(origin: iconOrigin, size: iconSize))
         icon.image = image
 
-        let okButtonOrigin = CGPoint(x: 0, y: text.frame.height)
-        let okButtonSize = CGSize(width: modalSize.width, height: (modalSize.height / 3))
-        okButton = UILabel(frame: CGRect(origin: okButtonOrigin, size: okButtonSize))
-        okButton.text = "OK"
-        okButton.textAlignment = .center
-        okButton.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
-        okButton.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        okButton.font = UIFont.boldSystemFont(ofSize: 20.0)
-        okButton.layer.borderWidth = 3
-        okButton.layer.borderColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
-        okButton.isUserInteractionEnabled = true
+        if isEvacuate {
+            let sendLocationOrigin = CGPoint(x: -2, y: text.frame.height)
+            let sendLocationSize = CGSize(width: modalSize.width / 2 + 2, height: (modalSize.height / 3) + 2)
+            let button = UILabel(frame: CGRect(origin: sendLocationOrigin, size: sendLocationSize))
+            button.text = "SEND LOCATION"
+            button.textAlignment = .center
+            button.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+            button.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            button.font = UIFont.boldSystemFont(ofSize: 20.0)
+            button.layer.borderWidth = 1
+            button.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            button.isUserInteractionEnabled = true
+            addSubview(button)
+            sendLocationButton = button
+
+            let okButtonOrigin = CGPoint(x: modalSize.width / 2, y: text.frame.height)
+            let okButtonSize = CGSize(width: modalSize.width / 2 + 2, height: (modalSize.height / 3) + 2)
+            let ok = UILabel(frame: CGRect(origin: okButtonOrigin, size: okButtonSize))
+            ok.text = "OK"
+            ok.textAlignment = .center
+            ok.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+            ok.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            ok.font = UIFont.boldSystemFont(ofSize: 20.0)
+            ok.layer.borderWidth = 1
+            ok.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            ok.isUserInteractionEnabled = true
+            addSubview(ok)
+            okEvacuateButton = ok
+        } else {
+            let okButtonOrigin = CGPoint(x: 0, y: text.frame.height)
+            let okButtonSize = CGSize(width: modalSize.width, height: (modalSize.height / 3))
+            let ok = UILabel(frame: CGRect(origin: okButtonOrigin, size: okButtonSize))
+            ok.text = "OK"
+            ok.textAlignment = .center
+            ok.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+            ok.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            ok.font = UIFont.boldSystemFont(ofSize: 20.0)
+            ok.isUserInteractionEnabled = true
+            addSubview(ok)
+            okButton = ok
+        }
 
         addSubview(text)
         addSubview(icon)
-        addSubview(okButton)
 
         bindAllGestureRecognizers()
     }
@@ -63,10 +95,26 @@ class AlertWindow: UIView {
 extension AlertWindow {
     func bindAllGestureRecognizers() {
         let okTap = UITapGestureRecognizer(target: self, action: #selector(handleOkTap(_:)))
-        okButton.addGestureRecognizer(okTap)
+        okButton?.addGestureRecognizer(okTap)
+
+        let evacuateOkTap = UITapGestureRecognizer(target: self, action: #selector(handleEvacuateOkTap(_:)))
+        okEvacuateButton?.addGestureRecognizer(evacuateOkTap)
+
+        let sendLocationTap = UITapGestureRecognizer(target: self, action: #selector(handleSendLocationTap(_:)))
+        sendLocationButton?.addGestureRecognizer(sendLocationTap)
     }
 
     @objc func handleOkTap(_ recognizer: UITapGestureRecognizer) {
+        removeFromSuperview()
+    }
+
+    @objc func handleEvacuateOkTap(_ recognizer: UITapGestureRecognizer) {
+        observer?.alertDidClose(alert: self, isSendLocation: false)
+        removeFromSuperview()
+    }
+
+    @objc func handleSendLocationTap(_ recognizer: UITapGestureRecognizer) {
+        observer?.alertDidClose(alert: self, isSendLocation: true)
         removeFromSuperview()
     }
 }
