@@ -9,12 +9,17 @@ import UIKit
 
 class Room: UIView {
     let roomName: String
+    let roomType: RoomType
     private var displayLink: CADisplayLink?
     private var reds: [CGColor] = [#colorLiteral(red: 1, green: 0.1906917691, blue: 0, alpha: 1), #colorLiteral(red: 0.9374032021, green: 0.291980505, blue: 0, alpha: 1), #colorLiteral(red: 0.8689120412, green: 0.2870525122, blue: 0, alpha: 1), #colorLiteral(red: 0.7658892274, green: 0.244256705, blue: 0.003047145903, alpha: 1), #colorLiteral(red: 0.6353023052, green: 0.2032178938, blue: 0.01525276713, alpha: 1), #colorLiteral(red: 0.5147069693, green: 0.1652458012, blue: 0.02172833309, alpha: 1), #colorLiteral(red: 0.4189986587, green: 0.1350331008, blue: 0.02390548587, alpha: 1), #colorLiteral(red: 0.2602037191, green: 0.08463910967, blue: 0.02252609096, alpha: 1), #colorLiteral(red: 0.1051820144, green: 0.0348829329, blue: 0.01219188701, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 0.1051820144, green: 0.0348829329, blue: 0.01219188701, alpha: 1), #colorLiteral(red: 0.2602037191, green: 0.08463910967, blue: 0.02252609096, alpha: 1), #colorLiteral(red: 0.4189986587, green: 0.1350331008, blue: 0.02390548587, alpha: 1), #colorLiteral(red: 0.5147069693, green: 0.1652458012, blue: 0.02172833309, alpha: 1), #colorLiteral(red: 0.6353023052, green: 0.2032178938, blue: 0.01525276713, alpha: 1), #colorLiteral(red: 0.7658892274, green: 0.244256705, blue: 0.003047145903, alpha: 1), #colorLiteral(red: 0.8689120412, green: 0.2870525122, blue: 0, alpha: 1), #colorLiteral(red: 0.9374032021, green: 0.291980505, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0.1906917691, blue: 0, alpha: 1)]
     private var colorIndex = 0
+    var observer: RoomObserver?
+    let level: Int
 
-    init(roomName: String, frame: CGRect) {
+    init(roomName: String, roomType: RoomType, level: Int, frame: CGRect) {
         self.roomName = roomName
+        self.roomType = roomType
+        self.level = level
         super.init(frame: frame)
 
         layer.borderWidth = 1
@@ -37,6 +42,7 @@ class Room: UIView {
         displayLink = CADisplayLink(target: self, selector: #selector(updateAnimation))
         displayLink?.preferredFramesPerSecond = 15
         displayLink?.add(to: RunLoop.main, forMode: .common)
+        observer?.roomDidSetOnFire(room: self)
     }
 
     func stopFire() {

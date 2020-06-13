@@ -14,10 +14,6 @@ class FloorPlan: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = FloorPlan.backgroundColor
-        let height = UIScreen.main.bounds.height
-        let width = UIScreen.main.bounds.width
-        
-        
     }
 
     required init?(coder: NSCoder) {

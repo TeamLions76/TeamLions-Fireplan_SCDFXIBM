@@ -56,14 +56,22 @@ class ToggleFloorSwitch: UIView {
 }
 
 extension ToggleFloorSwitch {
-    @objc func level1Tap(_ recognizer: UITapGestureRecognizer) {
+    func selectLevel1() {
         selectedLevel = 1
         observer?.didSelectLevel1()
     }
 
-    @objc func level2Tap(_ recognizer: UITapGestureRecognizer) {
+    func selectLevel2() {
         selectedLevel = 2
         observer?.didSelectLevel2()
+    }
+
+    @objc func level1Tap(_ recognizer: UITapGestureRecognizer) {
+        selectLevel1()
+    }
+
+    @objc func level2Tap(_ recognizer: UITapGestureRecognizer) {
+        selectLevel2()
     }
 
     func bindAllGestureRecognizers() {
