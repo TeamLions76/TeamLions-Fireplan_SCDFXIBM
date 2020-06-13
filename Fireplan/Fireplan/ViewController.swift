@@ -17,17 +17,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         floorPlan1 = FloorPlan(frame: view.frame)
         addRoomsToFloorPlan1()
-        view.addSubview(floorPlan1)
+        //view.addSubview(floorPlan1)
 
         floorPlan2 = FloorPlan(frame: view.frame)
         addRoomsToFloorPlan2()
-        //view.addSubview(floorPlan2)
+        view.addSubview(floorPlan2)
     }
 
     func addRoomsToFloorPlan2() {
         let height = UIScreen.main.bounds.height
         let width = UIScreen.main.bounds.width
-    let house = Room(
+        let house = Room(
             roomName: "",
             frame: CGRect(origin: CGPoint(x: 50, y: 50), size: CGSize(width: width - 100, height: height - 100)))
         floorPlan2.addSubview(house)
@@ -39,36 +39,36 @@ class ViewController: UIViewController {
         floorPlan2.addSubview(stairs1)
         let stairs2Origin = CGPoint(x: 60, y: 70)
         let stairs2 = Room(roomName: "", frame: CGRect(origin: stairs2Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs2)
+        floorPlan2.addSubview(stairs2)
         let stairs3Origin = CGPoint(x: 60, y: 80)
         let stairs3 = Room(roomName: "", frame: CGRect(origin: stairs3Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs3)
+        floorPlan2.addSubview(stairs3)
         let stairs4Origin = CGPoint(x: 60, y: 90)
         let stairs4 = Room(roomName: "", frame: CGRect(origin: stairs4Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs4)
+        floorPlan2.addSubview(stairs4)
         let stairs5Origin = CGPoint(x: 60, y: 100)
         let stairs5 = Room(roomName: "", frame: CGRect(origin: stairs5Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs5)
+        floorPlan2.addSubview(stairs5)
         let stairs6Origin = CGPoint(x: 60, y: 110)
         let stairs6 = Room(roomName: "", frame: CGRect(origin: stairs6Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs6)
+        floorPlan2.addSubview(stairs6)
         let stairs7Origin = CGPoint(x: 60, y: 120)
         let stairs7 = Room(roomName: "", frame: CGRect(origin: stairs7Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs7)
+        floorPlan2.addSubview(stairs7)
         let stairs8Origin = CGPoint(x: 60, y: 130)
         let stairs8 = Room(roomName: "", frame: CGRect(origin: stairs8Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs8)
+        floorPlan2.addSubview(stairs8)
         let stairs9Origin = CGPoint(x: 60, y: 140)
         let stairs9 = Room(roomName: "", frame: CGRect(origin: stairs9Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs9)
+        floorPlan2.addSubview(stairs9)
         let stairs10Origin = CGPoint(x: 60, y: 150)
         let stairs10 = Room(roomName: "", frame: CGRect(origin: stairs10Origin, size: stairsSize))
-         floorPlan2.addSubview(stairs10)
+        floorPlan2.addSubview(stairs10)
         
         let bedroom2Origin = CGPoint(x: 135, y: 60)
         let bedroom2Size = CGSize(width: width / 4, height: 120)
         let bedroom2 = Room(roomName: "Bed 2", frame: CGRect(origin: bedroom2Origin, size: bedroom2Size))
-         floorPlan2.addSubview(bedroom2)
+        floorPlan2.addSubview(bedroom2)
         
         let bedroom3Origin = CGPoint(
             x: bedroom2Origin.x + bedroom2Size.width,
