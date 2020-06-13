@@ -54,6 +54,60 @@ class FloorPlan: UIView {
         let stairs10Origin = CGPoint(x: 60, y: 150)
         let stairs10 = Room(roomName: "", frame: CGRect(origin: stairs10Origin, size: stairsSize))
         addSubview(stairs10)
+        
+        let bedroom2Origin = CGPoint(x: 135, y: 60)
+        let bedroom2Size = CGSize(width: width / 4, height: 120)
+        let bedroom2 = Room(roomName: "Bed 2", frame: CGRect(origin: bedroom2Origin, size: bedroom2Size))
+        addSubview(bedroom2)
+        
+        let bedroom3Origin = CGPoint(
+            x: bedroom2Origin.x + bedroom2Size.width,
+            y: bedroom2Origin.y + 20
+        )
+        let bedroom3Size = CGSize(width: width - 130 - stairsSize.width - bedroom2Size.width, height: 130)
+        let bedroom3 = Room(roomName: "Bed 3", frame: CGRect(origin: bedroom3Origin, size: bedroom3Size))
+        addSubview(bedroom3)
+        
+        let bathroom3Origin = CGPoint(
+            x: bedroom3Origin.x + (bedroom3Size.width / 3 ),
+            y: bedroom3Origin.y + bedroom3Size.height
+        )
+        let bathroom3Size = CGSize(width: (bedroom3Size.width / 3) * 2, height: 30)
+        let bathroom3 = Room(roomName: "Bath 3", frame: CGRect(origin: bathroom3Origin, size: bathroom3Size))
+        addSubview(bathroom3)
+        
+        let storageOrigin = CGPoint(x: bedroom3Origin.x , y: bathroom3Origin.y + bathroom3Size.height)
+        let storageSize = CGSize(width: bedroom3Size.width, height: bedroom3Size.height / 2)
+        let storage = Room(roomName: "Storage", frame: CGRect(origin:storageOrigin , size:storageSize))
+        addSubview(storage)
+        
+        let masterBathroomOrigin = CGPoint(
+            x: bedroom3Origin.x + (bedroom3Size.width / 3 ),
+            y: storageOrigin.y + storageSize.height
+        )
+        let masterBathroomSize = bathroom3Size
+        let masterBathroom = Room(roomName: "M.Bath", frame: CGRect(origin: masterBathroomOrigin, size: masterBathroomSize))
+        addSubview(masterBathroom)
+        
+        let masterBedroomOrigin = CGPoint(
+            x: bedroom2Origin.x + bedroom2Size.width / 2,
+            y:masterBathroomOrigin.y + masterBathroomSize.height
+        )
+        let masterBedroomSize = CGSize(width: bedroom2Size.width / 2 + bedroom3Size.width, height: width / 4)
+        let masterBedroom = Room(roomName: "M.Bed", frame: CGRect(origin: masterBedroomOrigin, size: masterBedroomSize))
+        addSubview(masterBedroom)
+        
+        let familyRoomSize = CGSize(width: width - 140 - masterBedroomSize.width, height: storageSize.height + masterBathroomSize.height + masterBedroomSize.height)
+        let familyRoomOrigin = CGPoint( x: 80, y: storageOrigin.y)
+        let familyRoom = Room(roomName: "Family Room", frame: CGRect(origin: familyRoomOrigin, size: familyRoomSize))
+              addSubview(familyRoom)
+        
+        let balconyOrigin = CGPoint( x: familyRoomOrigin.x, y: familyRoomOrigin.y + familyRoomSize.height)
+        let balconySize = CGSize(width: familyRoomSize.width + masterBedroomSize.width / 2, height: width / 6)
+        
+        let balcony = Room(roomName: "Balcony", frame: CGRect(origin: balconyOrigin, size: balconySize))
+              addSubview(balcony)
+        
     }
 
     required init?(coder: NSCoder) {
