@@ -133,8 +133,7 @@
 				3762741C2493C3F800149179 /* ViewController.swift */,
 				376274482493C6F000149179 /* Room.swift */,
 				372F740F24949AD300E39E47 /* Keys.swift */,
-				375086642494A6D100023EFB /* ToggleFloorSwitch.swift */,
-				375086662494A98E00023EFB /* SwitchObserver.swift */,
+				3787E4FD2494B125003A8169 /* Switch */,
 				372F740D24949A9F00E39E47 /* Database.swift */,
 				3762744A2493CA8C00149179 /* FloorPlan.swift */,
 				3762741E2493C3F800149179 /* Main.storyboard */,
@@ -161,6 +160,15 @@
 				3762743C2493C3FD00149179 /* Info.plist */,
 			);
 			path = FireplanUITests;
+			sourceTree = "<group>";
+		};
+		3787E4FD2494B125003A8169 /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				375086642494A6D100023EFB /* ToggleFloorSwitch.swift */,
+				375086662494A98E00023EFB /* SwitchObserver.swift */,
+			);
+			path = Switch;
 			sourceTree = "<group>";
 		};
 		51EB4122C5DBE6407EF718BF /* Frameworks */ = {
