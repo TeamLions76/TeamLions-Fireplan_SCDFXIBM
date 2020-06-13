@@ -10,6 +10,8 @@
 		02C6423FBABC5737654891B2 /* Pods_Fireplan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462366CA65D9C0CA1176C263 /* Pods_Fireplan.framework */; };
 		372F740E24949A9F00E39E47 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372F740D24949A9F00E39E47 /* Database.swift */; };
 		372F741024949AD400E39E47 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372F740F24949AD300E39E47 /* Keys.swift */; };
+		375086652494A6D100023EFB /* ToggleFloorSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375086642494A6D100023EFB /* ToggleFloorSwitch.swift */; };
+		375086672494A98E00023EFB /* SwitchObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375086662494A98E00023EFB /* SwitchObserver.swift */; };
 		376274192493C3F800149179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376274182493C3F800149179 /* AppDelegate.swift */; };
 		3762741B2493C3F800149179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762741A2493C3F800149179 /* SceneDelegate.swift */; };
 		3762741D2493C3F800149179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762741C2493C3F800149179 /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		0E4518310ED83C070B3EC2D1 /* Pods-Fireplan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fireplan.release.xcconfig"; path = "Target Support Files/Pods-Fireplan/Pods-Fireplan.release.xcconfig"; sourceTree = "<group>"; };
 		372F740D24949A9F00E39E47 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		372F740F24949AD300E39E47 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		375086642494A6D100023EFB /* ToggleFloorSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFloorSwitch.swift; sourceTree = "<group>"; };
+		375086662494A98E00023EFB /* SwitchObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchObserver.swift; sourceTree = "<group>"; };
 		376274152493C3F800149179 /* Fireplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fireplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376274182493C3F800149179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3762741A2493C3F800149179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				3762741C2493C3F800149179 /* ViewController.swift */,
 				376274482493C6F000149179 /* Room.swift */,
 				372F740F24949AD300E39E47 /* Keys.swift */,
+				375086642494A6D100023EFB /* ToggleFloorSwitch.swift */,
+				375086662494A98E00023EFB /* SwitchObserver.swift */,
 				372F740D24949A9F00E39E47 /* Database.swift */,
 				3762744A2493CA8C00149179 /* FloorPlan.swift */,
 				3762741E2493C3F800149179 /* Main.storyboard */,
@@ -419,6 +425,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375086652494A6D100023EFB /* ToggleFloorSwitch.swift in Sources */,
+				375086672494A98E00023EFB /* SwitchObserver.swift in Sources */,
 				372F740E24949A9F00E39E47 /* Database.swift in Sources */,
 				3762741D2493C3F800149179 /* ViewController.swift in Sources */,
 				376274192493C3F800149179 /* AppDelegate.swift in Sources */,

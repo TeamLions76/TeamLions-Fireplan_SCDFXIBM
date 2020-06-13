@@ -9,9 +9,39 @@
 import SwiftCloudant
 
 class Database {
-    static let cloudantURL = URL(string:"https://username.cloudant.com")!
-    let client = CouchDBClient(url:cloudantURL, username:"username", password:"password")
-    let dbName = "database"
+    static let cloudantURL = URL(string:"https://" + Keys.username + ".cloudant.com")!
+    let client = CouchDBClient(
+        url:cloudantURL,
+        username: Keys.username,
+        password: Keys.password)
+    let dbName = "fire-type"
+
+    func populateDB() {
+        let create = PutDocumentOperation(id: "doc1", body: ["hello":"world"], databaseName: dbName) {(response, httpInfo, error) in
+            if let error = error as? SwiftCloudant.Operation.Error {
+                switch error {
+                case .http(let httpError):
+                    print("http error status code: \(httpError.statusCode)  response: \(httpError.response)")
+                default:
+                    print("Encountered an error while creating a document. Error:\(error)")
+                }
+            } else {
+                print("Created document \(response?["id"]) with revision id \(response?["rev"])")
+            }
+        }
+        client.add(operation:create)
+    }
+
+    func readDB() {
+        let read = GetDocumentOperation(id: "doc1", databaseName: dbName) { (response, httpInfo, error) in
+            if let error = error {
+                print("Encountered an error while reading a document. Error:\(error)")
+            } else {
+                print("Read document: \(response)")
+            }
+        }
+        client.add(operation:read)
+    }
 
     /*
     /* Read the Cloudant credentials and intialize database connection */
