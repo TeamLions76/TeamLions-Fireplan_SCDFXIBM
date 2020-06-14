@@ -29,18 +29,15 @@ It plays a pro-active role in early fire detection and firefighting. Using smart
 Insert Pitch Video here
 
 ## Architecture of Fireplan
-This is the high-level architecture of 
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture1.jpg" align="center" height="300"></a>
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture2.jpg" align="center" height="300"></a>
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture3.jpg" align="center" height="300"></a>
+This is the high-level architecture of Fireplan, illustrating the relationship between the users, the application and the back end.
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture.png" align="center" height="300"></a>
 
 
 ## Detailed Solution
 d) A hyperlink to your detailed solution* (Long description of your solution)
 
 ## Timeline
-Friday:
-6pm
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/timeline.png" align="center" height="300"></a>
 
 ## Getting Started
 
