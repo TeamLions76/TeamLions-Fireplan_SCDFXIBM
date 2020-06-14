@@ -75,3 +75,6 @@ To run the tests in Xcode, navigate to the Test navigator and run from there.
 
 ## IBM Cloud Resource
 We used **IBM Cloudant** as our noSQL database to store fire-fighting tips and information regarding the different types of household fires.
+
+<a href="https://cloud.ibm.com/catalog/services/cloudant">IBM Cloudant</a> - The NoSQL Database used
+
