@@ -38,10 +38,9 @@ In the event of suspected fire, **Fireplan** will auto generate a fire alert war
 
 * If it is assessed to be a huge fire, an evacuation message will be prompted immediately, concurrently, the nearest fire station will be notified. If household members happened to be trapped in the house, they can share their location to facilitate swift rescue by SCFD.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Screenshots/3ss.png" align="center" height="300"></a>
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Screenshots/4ss.png" align="center" height="300"></a>
+Evacuation Alert           |  Information Window
+:-------------------------:|:-------------------------:
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Screenshots/3ss.png" align="center" height="300"></a>  |  <a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Screenshots/4ss.png" align="center" height="300"></a>
 
 ### Communication with SCDF
 
