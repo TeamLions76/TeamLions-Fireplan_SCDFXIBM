@@ -18,13 +18,13 @@ Lee Yin Jie, Tan Ying, Ho Hol Yin
 We are a group of students from **SUTD** (Architecture) and **NUS** (Industrial Design and Computer Science).
 
 ## Problem Description
-Fires are a key concern of the SCDF. Being a phenomenon that occurs almost instantaneously without any warning and has a potential to quickly spiral out of control, we identified such situations to require an immediate response. We intend to use technology to make sense of data collected from state-of-the-art sensors and use these data to educate and inform people.
+Fires are a key concern of the SCDF. Being a phenomenon that occurs almost instantaneously without any warning and has the potential to quickly spiral out of control, we identified such situations to require an immediate response. We intend to use technology to make sense of data collected from state-of-the-art sensors and use these data to educate and inform people.
 
 Our technological solution: **Fireplan**.
 
-**Fireplan** is a fire awareness and detection app with in households. On normal days, it is an educational tool which inform members of the household the potential fire hotspots in their house and the respective extinguishers that they might require. 
+**Fireplan** is a fire awareness and detection app within households. On normal days, it is an educational tool that informs members of the household about the potential fire hotspots in their house and the respective extinguishers that they might require.
 
-It plays a pro-active role in **early fire detection and firefighting**. Using smart sensors, such as heat, smoke level and air quality sensor, **Fireplan** will be able to **analyse the everyday data collected** and **raise an alert** when there is abnormality. This offers **early detection of potential fire** and guide household member to **put out fire before the situation worsens**.
+It plays a pro-active role in **early fire detection and firefighting**. UUsing smart sensors, such as heat, smoke level, and air quality sensors, **Fireplan** will be able to analyse the everyday data collected and **raise an alert** when there is an abnormality. This offers **early detection of potential fire** and guides household members to **put out the fire before the situation worsens**.
 
 ## Pitch Video
 [![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
