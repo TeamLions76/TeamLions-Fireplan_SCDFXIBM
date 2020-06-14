@@ -1,4 +1,5 @@
 # Fireplan
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Assets/FireplanLogo.png" align="center" height="150"></a>
 
 ## Content
 1. [Team Lions](#team-lions) 
@@ -14,7 +15,7 @@
 ## Team Lions
 Lee Yin Jie, Tan Ying, Ho Hol Yin
 
-We are a group of students from **SUTD** (Architecture) and **NUS** (Industrial Design and Computer Science)
+We are a group of students from **SUTD** (Architecture) and **NUS** (Industrial Design and Computer Science).
 
 ## Problem Description
 Fires are a key concern of the SCDF. Being a phenomenon that occurs almost instantaneously without any warning and has a potential to quickly spiral out of control, we identified such situations to require an immediate response. We intend to use technology to make sense of data collected from state-of-the-art sensors and use these data to educate and inform people.
