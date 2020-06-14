@@ -37,7 +37,7 @@ This is the high-level architecture of Fireplan, illustrating the relationship b
 d) A hyperlink to your detailed solution* (Long description of your solution)
 
 ## Timeline
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/timeline.png" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/timeline.jpg" align="center" height="300"></a>
 
 ## Getting Started
 
