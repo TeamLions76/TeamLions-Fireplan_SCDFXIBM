@@ -43,13 +43,27 @@ Friday:
 6pm
 
 ## Getting Started
-f) Getting started* (Step-by-step instructions to install the required software and how
-to run a demo of your solution)
+
+### Prerequisites
+You will require the latest version of XCode (Version 11.5).
+
+#### Installing
+1. Clone the project into your local machine.
+```
+git clone https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM.git
+```
+2. Navigate to the project directory and install the required pods. The podfile will be provided in the repository.
+```
+pod install
+```
+3. Open up the file `.xcworkspace` file (`Fireplan.xcworkspace`)
+
+4. To run the app, ensure that the target is set to `Fireplan` and the target device to a device of your choice (an iPhone or a simulator attached)
 
 ## Tests
-g) Running the tests (Explanation and breakdown on how to run tests for the proposed
-solution)
+We use XCTest module that is built in in Xcode to run our automated tests for our app.
+
+<a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/tree/master/Fireplan/FireplanTests">Automated Tests for Fireplan</a>
 
 ## IBM Cloud Resource
-i) What your team used to build your solution* (e.g. IBM Cloudant, IBM Cloud
-Functions, etc...)
+We used **IBM Cloudant** as our noSQL database to store fire-fighting tips and information regarding the different types of household fires.
