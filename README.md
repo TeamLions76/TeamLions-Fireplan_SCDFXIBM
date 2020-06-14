@@ -27,7 +27,7 @@ Our technological solution: **Fireplan**.
 It plays a pro-active role in **early fire detection and firefighting**. UUsing smart sensors, such as heat, smoke level, and air quality sensors, **Fireplan** will be able to analyse the everyday data collected and **raise an alert** when there is an abnormality. This offers **early detection of potential fire** and guides household members to **put out the fire before the situation worsens**.
 
 ## Pitch Video
-[![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
+[![Pitch Video for Fireplan](http://img.youtube.com/vi/bi9MSSjF6II/0.jpg)](http://www.youtube.com/watch?v=bi9MSSjF6II "")
 
 ## Architecture of Fireplan
 * This is the **high-level architecture** of **Fireplan**, illustrating the relationship between the **users**, the **application** and the **back end**.
