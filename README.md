@@ -58,7 +58,11 @@ pod install
 ```
 3. Open up the file `.xcworkspace` file (`Fireplan.xcworkspace`)
 
-4. To run the app, ensure that the target is set to `Fireplan` and the target device to a device of your choice (an iPhone or a simulator attached)
+4. To run the app, ensure that the target is set to `Fireplan` and the target device to a device of your choice (an iPhone or a simulator attached). **Fireplan** is optimally designed for **iPhone 8** (but can be extensible to include all iPhones/Android devices in the future)
+
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/target.png" align="center" height="100"></a>
+
+5. Run the app! Click on the 'Run' button at the top left hand corner or execute the run command using Command-R (when editing the code)
 
 ## Tests
 We use XCTest module that is built in in Xcode to run our automated tests for our app.
