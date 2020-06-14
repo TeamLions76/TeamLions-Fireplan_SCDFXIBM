@@ -1,0 +1,72 @@
+{
+ "id": "doc1",
+ "key": "doc1",
+ "value": {
+  "rev": "6-0abde565f05c9e41e3d416631d5a177e"
+ },
+ "doc": {
+  "_id": "doc1",
+  "_rev": "6-0abde565f05c9e41e3d416631d5a177e",
+  "allFires": [
+   {
+    "fireType": "Grease/Oil",
+    "class": "F",
+    "location": [
+     "Kitchen"
+    ],
+    "extinguish": [
+     "DryPowderExtinguisher",
+     "Salt"
+    ]
+   },
+   {
+    "fireType": "Alcohol",
+    "class": "B",
+    "location": [
+     "Kitchen",
+     "Dining"
+    ],
+    "extinguish": [
+     "CO2Extinguisher",
+     "DryPowderExtinguisher"
+    ]
+   },
+   {
+    "fireType": "Gas",
+    "class": "C",
+    "location": [
+     "Kitchen"
+    ],
+    "extinguish": [
+     "DryPowderExtinguisher"
+    ]
+   },
+   {
+    "fireType": "Electrical",
+    "class": "E",
+    "location": [
+     "Kitchen",
+     "Bedroom",
+     "Utility"
+    ],
+    "extinguish": [
+     "DryPowderExtinguisher"
+    ]
+   },
+   {
+    "fireType": "Textiles",
+    "class": "A",
+    "location": [
+     "Kitchen",
+     "Bedroom",
+     "Utility"
+    ],
+    "extinguish": [
+     "FoamExtinguisher",
+     "WaterExtinguisher",
+     "DryPowderExtinguisher"
+    ]
+   }
+  ]
+ }
+}
