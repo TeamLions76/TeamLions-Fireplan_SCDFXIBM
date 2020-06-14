@@ -9,7 +9,9 @@
 1. [Detailed Solution](#detailed-solution) 
 1. [Timeline](#timeline) 
 1. [Getting Started](#getting-started) 
-1. [Tests](#tests) 
+1. [Tests](#tests)
+   * [Automated Testing](#automated-testing)
+   * [Exploratory Testing](#exploratory-testing)
 1. [IBM Cloud Resource](#ibm-cloud-resource) 
 
 ## Team Lions
