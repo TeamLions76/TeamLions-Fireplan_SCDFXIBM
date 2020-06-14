@@ -12,7 +12,7 @@
 1. [IBM Cloud Resource](#ibm-cloud-resource) 
 
 ## Team Lions
-By Lee Yin Jie, Tan Ying, Ho Hol Yin
+Lee Yin Jie, Tan Ying, Ho Hol Yin
 
 We are a group of students from **SUTD** (Architecture) and **NUS** (Industrial Design and Computer Science)
 
@@ -39,10 +39,10 @@ Insert Pitch Video here
   * Communication aspect with designers on requirements of application
 
 ## Detailed Solution
-d) A hyperlink to your detailed solution* (Long description of your solution)
+* <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/DESCRIPTION.md">Fireplan Detailed Solution</a>
 
 ## Timeline
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/timeline.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/timeline.jpg" align="center" height="500"></a>
 
 ## Getting Started
 
