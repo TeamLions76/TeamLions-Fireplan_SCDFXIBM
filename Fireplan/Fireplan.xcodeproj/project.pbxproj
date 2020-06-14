@@ -221,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				376274312493C3FD00149179 /* Info.plist */,
-				3787E5562495DF65003A8169 /* FloorPlanViewControllerTests.swift */,
+				3787E5582496186E003A8169 /* ViewController */,
 				3787E5552495DF50003A8169 /* Switch */,
 				3787E54E2495DA0E003A8169 /* Window */,
 				3787E54B2495D891003A8169 /* Constants */,
@@ -354,6 +354,14 @@
 				3787E5532495DD56003A8169 /* ToggleFloorSwitchTests.swift */,
 			);
 			path = Switch;
+			sourceTree = "<group>";
+		};
+		3787E5582496186E003A8169 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3787E5562495DF65003A8169 /* FloorPlanViewControllerTests.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		51EB4122C5DBE6407EF718BF /* Frameworks */ = {

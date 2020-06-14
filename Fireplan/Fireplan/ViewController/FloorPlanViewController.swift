@@ -14,6 +14,7 @@ class FloorPlanViewController: UIViewController {
     var selectedFloorPlan: FloorPlan!
     var levelSwitch: ToggleFloorSwitch!
     var rooms: [Room] = []
+    var roomsOnFire: [Room] = []
     var allFireTypes: [FireType] = []
     var currentlyOpenedInfoWindow: InfoWindow?
     var homeLabel: UILabel!
@@ -376,6 +377,12 @@ extension FloorPlanViewController: SwitchObserver {
 
 extension FloorPlanViewController: RoomObserver {
     func roomDidSetOnFire(room: Room) {
+        // For demonstration purpose, only allow one room to be on fire at one time
+        if !roomsOnFire.isEmpty {
+            room.stopFire()
+            return
+        }
+        roomsOnFire.append(room)
         room.level == 1 ? levelSwitch.selectLevel1() : levelSwitch.selectLevel2()
         let possibleFireTypes = allFireTypes.filter { $0.locations.contains(room.roomType) }
         let extinguisherIcon = possibleFireTypes.isEmpty

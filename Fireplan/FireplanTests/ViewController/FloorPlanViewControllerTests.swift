@@ -85,6 +85,48 @@ class FloorPlanViewControllerTests: XCTestCase {
         XCTAssertEqual(originalSubViewCount + 1, afterSubViewCount)
         XCTAssertNotNil(viewController.currentlyOpenedInfoWindow)
     }
+
+    func testAlertDidClose_isSendLocation_false() {
+        viewController.viewDidLoad()
+        let myRoom = Room(
+            roomName: "myRoom",
+            roomType: .Bedroom, level: 1,
+            frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 5, height: 5)))
+        viewController.roomDidSetOnFire(room: myRoom)
+        let alertWindow = viewController.view.subviews.first {
+            String(describing: type(of: $0)) == "AlertWindow"
+        }
+        guard let window = alertWindow as? AlertWindow else {
+            XCTFail("UIView should be an AlertWindow")
+            return
+        }
+        viewController.alertDidClose(alert: window, isSendLocation: false)
+
+        let subviews = viewController.view.subviews.map { String(describing: type(of: $0)) }
+        let alertInfoWindowCount = subviews.filter { $0 == "AlertInfoWindow" }.count
+        XCTAssertEqual(alertInfoWindowCount, 1)
+    }
+
+    func testAlertDidClose_isSendLocation_true() {
+        viewController.viewDidLoad()
+        let myRoom = Room(
+            roomName: "myRoom",
+            roomType: .Bedroom, level: 1,
+            frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 5, height: 5)))
+        viewController.roomDidSetOnFire(room: myRoom)
+        let alertWindow = viewController.view.subviews.first {
+            String(describing: type(of: $0)) == "AlertWindow"
+        }
+        guard let window = alertWindow as? AlertWindow else {
+            XCTFail("UIView should be an AlertWindow")
+            return
+        }
+        viewController.alertDidClose(alert: window, isSendLocation: true)
+
+        let subviews = viewController.view.subviews.map { String(describing: type(of: $0)) }
+        let alertInfoWindowCount = subviews.filter { $0 == "AlertInfoWindow" }.count
+        XCTAssertEqual(alertInfoWindowCount, 1)
+    }
 }
 
 extension FloorPlanViewControllerTests {
