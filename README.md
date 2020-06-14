@@ -16,7 +16,11 @@ Our technological solution: **Fireplan**.
 Insert Pitch Video here
 
 ## Architecture of Fireplan
-c) The architecture of your proposed solution
+This is the high-level architecture of 
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture1.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture2.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture3.jpg" align="center" height="300"></a>
+
 
 ## Detailed Solution
 d) A hyperlink to your detailed solution* (Long description of your solution)
