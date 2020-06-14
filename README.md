@@ -45,7 +45,7 @@ Friday:
 ## Getting Started
 
 ### Prerequisites
-You will require the latest version of XCode (Version 11.5).
+You will require the latest version of Xcode (Version 11.5).
 
 #### Installing
 1. Clone the project into your local machine.
@@ -68,6 +68,10 @@ pod install
 We use XCTest module that is built in in Xcode to run our automated tests for our app.
 
 <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/tree/master/Fireplan/FireplanTests">Automated Tests for Fireplan</a>
+
+To run the tests in Xcode, navigate to the Test navigator and run from there.
+
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/tests.png" align="center" height="300"></a>
 
 ## IBM Cloud Resource
 We used **IBM Cloudant** as our noSQL database to store fire-fighting tips and information regarding the different types of household fires.
