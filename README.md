@@ -34,7 +34,7 @@ Insert Pitch Video here
 
 <a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture.png" align="center" height="300"></a>
 
-* **Fireplan** was created in 48 hours, of which the engineering process include elements of:
+* **Fireplan** is an iOS app that was created in 48 hours, of which the engineering process include elements of:
   * Test-driven development
   * Application of useful design patterns (including the Observer pattern, Facade pattern, etc.)
   * Communication aspect with designers on requirements of application
