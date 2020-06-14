@@ -38,7 +38,7 @@ It plays a pro-active role in **early fire detection and firefighting**. Using s
   * Test-driven development
   * Application of useful design patterns (including the Observer pattern, Facade pattern, etc.)
   * Communication aspect with designers on requirements of application
-  * Stubbing a <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Fireplan/Util/Sensor.swift">programatic sensor</a> to send mock data to the application (to be replaced with real IoT sensors for actual product). Stubbed sensor will pick up **temperature**, **current in ionized air** as well as **concentration of carbon monoxide**.
+  * Stubbing a <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Fireplan/Util/Sensor.swift">programatic sensor</a> to send mock data to the application (to be replaced with real IoT sensors for actual product). Stubbed sensor will pick up **temperature (in units of °C)**, **current in ionized air (in units of 10^-10 amperes)** as well as **concentration of carbon monoxide (in units of ppm)**.
   
 
 
