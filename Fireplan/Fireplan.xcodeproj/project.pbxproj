@@ -35,6 +35,8 @@
 		3787E51724952070003A8169 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51624952070003A8169 /* LoadingBar.swift */; };
 		3787E51924952732003A8169 /* AlertInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51824952732003A8169 /* AlertInfoWindow.swift */; };
 		3787E51B249530E5003A8169 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51A249530E5003A8169 /* Keys.swift */; };
+		3787E5232495B5B3003A8169 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5222495B5B3003A8169 /* Sensor.swift */; };
+		3787E5252495B5E6003A8169 /* SensorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5242495B5E6003A8169 /* SensorObserver.swift */; };
 		71B841AEC4EC5C95EF67124B /* Pods_Fireplan_FireplanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6981A3E085A0AAFBADC13765 /* Pods_Fireplan_FireplanUITests.framework */; };
 		975303A6839B7F6A09CAE1BF /* Pods_FireplanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1542FC3E8D3E34116FC9727 /* Pods_FireplanTests.framework */; };
 /* End PBXBuildFile section */
@@ -91,6 +93,8 @@
 		3787E51624952070003A8169 /* LoadingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBar.swift; sourceTree = "<group>"; };
 		3787E51824952732003A8169 /* AlertInfoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertInfoWindow.swift; sourceTree = "<group>"; };
 		3787E51A249530E5003A8169 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		3787E5222495B5B3003A8169 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		3787E5242495B5E6003A8169 /* SensorObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorObserver.swift; sourceTree = "<group>"; };
 		3CA238B387A99E3B3302CE64 /* Pods-Fireplan-FireplanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fireplan-FireplanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fireplan-FireplanUITests/Pods-Fireplan-FireplanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		462366CA65D9C0CA1176C263 /* Pods_Fireplan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fireplan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E731000FE8C69D79460EF0 /* Pods-FireplanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireplanTests.debug.xcconfig"; path = "Target Support Files/Pods-FireplanTests/Pods-FireplanTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 			children = (
 				376274182493C3F800149179 /* AppDelegate.swift */,
 				3762741A2493C3F800149179 /* SceneDelegate.swift */,
+				3787E5222495B5B3003A8169 /* Sensor.swift */,
+				3787E5242495B5E6003A8169 /* SensorObserver.swift */,
 				3787E51E249533BF003A8169 /* ViewController */,
 				3787E51D249533B4003A8169 /* Util */,
 				3787E51F249533DA003A8169 /* Room */,
@@ -521,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3787E51324951641003A8169 /* SettingsBar.swift in Sources */,
+				3787E5252495B5E6003A8169 /* SensorObserver.swift in Sources */,
 				375086652494A6D100023EFB /* ToggleFloorSwitch.swift in Sources */,
 				375086672494A98E00023EFB /* SwitchObserver.swift in Sources */,
 				3787E5032494B691003A8169 /* JSONParser.swift in Sources */,
@@ -541,6 +548,7 @@
 				3787E50B2494C76C003A8169 /* AlertObserver.swift in Sources */,
 				3787E4FF2494B308003A8169 /* InfoWindow.swift in Sources */,
 				3787E51524951C2E003A8169 /* LandingViewController.swift in Sources */,
+				3787E5232495B5B3003A8169 /* Sensor.swift in Sources */,
 				3787E51124950AE1003A8169 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

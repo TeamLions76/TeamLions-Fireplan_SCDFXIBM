@@ -53,11 +53,18 @@ class FloorPlanViewController: UIViewController {
         bindGestureRecgonizers()
 
         setUpRooms()
-        randomlySetFire()
+        // randomlySetFire()
     }
 
     func bindGestureRecgonizers() {
         settingsButton.addTarget(self, action: #selector(segueToSettings(_:)), for: .touchUpInside)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let settingsViewController = segue.destination as? SettingsViewController else {
+            return
+        }
+        settingsViewController.allFireTypes = allFireTypes
     }
 
     @objc func segueToSettings(_ sender: UIButton) {
@@ -69,7 +76,7 @@ class FloorPlanViewController: UIViewController {
             let fireSizes: [FireSize] = [.small, .medium, .large]
             let randomFireIndex = Int.random(in: 0..<fireSizes.count)
             let randomIndex = Int.random(in: 0..<self.rooms.count)
-            self.rooms[randomIndex].triggerFire(fireSize: fireSizes[randomFireIndex])
+            self.rooms[randomIndex].fireWasDetected(fireSize: fireSizes[randomFireIndex])
         }
     }
 

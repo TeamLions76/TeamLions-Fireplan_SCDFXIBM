@@ -16,12 +16,16 @@ class Room: UIView {
     var observer: RoomObserver?
     let level: Int
     var fireSize: FireSize?
+    var sensor: Sensor?
 
     init(roomName: String, roomType: RoomType, level: Int, frame: CGRect) {
         self.roomName = roomName
         self.roomType = roomType
         self.level = level
         super.init(frame: frame)
+        if roomName != "" {
+            sensor = Sensor(observer: self)
+        }
 
         layer.borderWidth = 1
         layer.borderColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
@@ -48,14 +52,6 @@ class Room: UIView {
         nil
     }
 
-    func triggerFire(fireSize: FireSize) {
-        self.fireSize = fireSize
-        displayLink = CADisplayLink(target: self, selector: #selector(updateAnimation))
-        displayLink?.preferredFramesPerSecond = fireSize.rawValue
-        displayLink?.add(to: RunLoop.main, forMode: .common)
-        observer?.roomDidSetOnFire(room: self)
-    }
-
     func stopFire() {
         displayLink?.invalidate()
         backgroundColor = nil
@@ -64,5 +60,16 @@ class Room: UIView {
     @objc func updateAnimation() {
         layer.backgroundColor = reds[colorIndex]
         colorIndex = (colorIndex + 1) % reds.count
+    }
+}
+
+extension Room: SensorObserver {
+    func fireWasDetected(fireSize: FireSize) {
+        stopFire()
+        self.fireSize = fireSize
+        displayLink = CADisplayLink(target: self, selector: #selector(updateAnimation))
+        displayLink?.preferredFramesPerSecond = fireSize.rawValue
+        displayLink?.add(to: RunLoop.main, forMode: .common)
+        observer?.roomDidSetOnFire(room: self)
     }
 }

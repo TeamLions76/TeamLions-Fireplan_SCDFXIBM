@@ -9,12 +9,12 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     var backButton: UIButton!
+    var allFireTypes: [FireType] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
-        let height = UIScreen.main.bounds.height
         let width = UIScreen.main.bounds.width
 
         let iconSide: CGFloat = 40
@@ -77,5 +77,12 @@ class SettingsViewController: UIViewController {
 
     @objc func segueToHome(_ sender: UIButton) {
         performSegue(withIdentifier: "backToHome", sender: sender)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let floorPlanViewController = segue.destination as? FloorPlanViewController else {
+            return
+        }
+        floorPlanViewController.allFireTypes = allFireTypes
     }
 }
