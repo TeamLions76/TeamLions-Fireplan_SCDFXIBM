@@ -71,6 +71,8 @@ pod install
 5. Run the app! Click on the 'Run' button at the top left hand corner or execute the run command using ⌘-R (when editing the code).
 
 ## Tests
+
+### Automated Testing
 * We use **XCTest** module that is built-in in Xcode to run our automated tests for our app.
 
   * <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/tree/master/Fireplan/FireplanTests">Automated Tests for Fireplan</a>
@@ -79,6 +81,13 @@ pod install
 
 <a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/tests.png" align="center" height="300"></a>
 
+### Exploratory Testing
+To make the app more testable, we have added the following features (that can be disabled/modifed):
+* Every 10s, the sensor will send a reading to the application.
+  * If no rooms are on fire and the sensor's data is interpreted to suspect a fire, the room which contains the sensor will trigger a fire alert. ***In the actual production app, alarms will be triggered independently across rooms***.
+  * If there is already an existing room on fire, sensor's data for all other rooms will be ignored (So that there is no sudden influx of fire alerts from other rooms. ***In the actual production app, alarms will be triggered independently across rooms***.
+  * In order to "reset" the fire alarm, the user can toggle to the settings page (at the top right icon) and toggle back to the floorplan again. This is intentionally designed to allow us to reset fire alarms, as we did not want to add a "reset" button, which will not be practical for the actual app (room state should solely be based on the sensor's data as the single source of truth). ***In the actual production app, toggling to the settings page and back to the floorplan will not reset the fire alarms. Again, the room state should solely be based on the sensor's data as the single source of truth***.
+  
 ## IBM Cloud Resource
 We used **IBM Cloudant** as our noSQL database to store fire-fighting tips and information regarding the different types of household fires.
 
