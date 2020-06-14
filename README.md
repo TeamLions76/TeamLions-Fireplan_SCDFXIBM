@@ -38,6 +38,9 @@ It plays a pro-active role in **early fire detection and firefighting**. Using s
   * Test-driven development
   * Application of useful design patterns (including the Observer pattern, Facade pattern, etc.)
   * Communication aspect with designers on requirements of application
+  * Stubbing a <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Fireplan/Util/Sensor.swift">programatic sensor</a> to send mock data to the application (to be replaced with real IoT sensors for actual product). Stubbed sensor will pick up **temperature**, **current in ionized air** as well as **concentration of carbon monoxide**.
+  
+
 
 ## Detailed Solution
 * <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/DESCRIPTION.md">Fireplan Detailed Solution</a>
@@ -55,17 +58,17 @@ It plays a pro-active role in **early fire detection and firefighting**. Using s
 ```
 git clone https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM.git
 ```
-2. Navigate to the project directory and install the required pods. The podfile will be provided in the repository.
+2. Navigate to the project directory and install the required pods. The podfile will be provided in the repository. The pod that we are adding to the project is <a href="https://github.com/cloudant/swift-cloudant">*SwiftCloudant*</a>.
 ```
 pod install
 ```
-3. Open up the file `.xcworkspace` file (`Fireplan.xcworkspace`)
+3. Open up the file `.xcworkspace` file (`Fireplan.xcworkspace`).
 
-4. To run the app, ensure that the target is set to `Fireplan` and the target device to a device of your choice (an iPhone or a simulator attached). **Fireplan** is optimally designed for **iPhone 8** (but can be extensible to include all iPhones/Android devices in the future)
+4. To run the app, ensure that the target is set to `Fireplan` and the target device to a device of your choice (an iPhone or a simulator attached). **Fireplan** is optimally designed for **iPhone 8** (but can be extensible to include all iPhones/Android devices in the future).
 
 <a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/target.png" align="center" height="100"></a>
 
-5. Run the app! Click on the 'Run' button at the top left hand corner or execute the run command using Command-R (when editing the code)
+5. Run the app! Click on the 'Run' button at the top left hand corner or execute the run command using ⌘-R (when editing the code).
 
 ## Tests
 * We use **XCTest** module that is built in in Xcode to run our automated tests for our app.
