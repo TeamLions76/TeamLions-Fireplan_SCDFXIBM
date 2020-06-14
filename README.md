@@ -1,11 +1,22 @@
 # Fireplan
 
+## Content
+1. [Team Lions](#team-lions) 
+2. [Problem Description](#problem-description) 
+3. [Pitch Video](#pitch-video) 
+4. [Architecture of Fireplan](#architecture-of-fireplan) 
+5. [Detailed Solution](#detailed-solution) 
+6. [Timeline](#timeline) 
+7. [Getting Started](#getting-started) 
+8. [Tests](#tests) 
+7. [IBM Cloud Resource](#ibm-cloud-resource) 
+
 ## Team Lions
 By Lee Yin Jie, Tan Ying, Ho Hol Yin
 
 We are a group of students from SUTD (Architecture) and NUS (Industrial Design and Computer Science)
 
-## Problem description
+## Problem Description
 Fires are a key concern of the SCDF. Being a phenomenon that occurs almost instantaneously without any warning and has a potential to quickly spiral out of control, we identified such situations to require an immediate response. We intend to use technology to make sense of data collected from state-of-the-art sensors and use these data to educate and inform people.
 
 Our technological solution: **Fireplan**.
