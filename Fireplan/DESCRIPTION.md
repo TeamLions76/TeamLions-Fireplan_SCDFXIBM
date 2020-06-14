@@ -15,7 +15,7 @@ Lastly, **Fireplan** is also a handy **resource management tool**. It informs SC
 ## How it works
 ### Education
 
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture1.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture1.jpg" align="center" height="500"></a>
 
 **Fireplan** first takes in data from the household smart sensors, smart devices as well as household floor plans. It also takes note of the registered people within the premises.
 
@@ -26,7 +26,7 @@ Tapping into the database of fire related information such as type of fire, pote
 
 ### Early detection of fire
 
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture2.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture2.jpg" align="center" height="500"></a>
 
 In the event of suspected fire, **Fireplan** will auto generate a fire alert warning to household members. They will receive information on the location of fire, the assessed size of fire and the action to be taken. 
 
@@ -44,7 +44,7 @@ Evacuation Alert           |  Information Window
 
 ### Communication with SCDF
 
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture3.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture3.jpg" align="center" height="500"></a>
 
 * The nearest fire station will receive the information of fire location, fire type, fire size and number of people within premises. With these first hand information, the fire station can plan and activate suitable manpower for firefighting.
 
