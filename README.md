@@ -14,7 +14,7 @@
 ## Team Lions
 By Lee Yin Jie, Tan Ying, Ho Hol Yin
 
-We are a group of students from SUTD (Architecture) and NUS (Industrial Design and Computer Science)
+We are a group of students from **SUTD** (Architecture) and **NUS** (Industrial Design and Computer Science)
 
 ## Problem Description
 Fires are a key concern of the SCDF. Being a phenomenon that occurs almost instantaneously without any warning and has a potential to quickly spiral out of control, we identified such situations to require an immediate response. We intend to use technology to make sense of data collected from state-of-the-art sensors and use these data to educate and inform people.
@@ -23,13 +23,13 @@ Our technological solution: **Fireplan**.
 
 **Fireplan** is a fire awareness and detection app with in households. On normal days, it is an educational tool which inform members of the household the potential fire hotspots in their house and the respective extinguishers that they might require. 
 
-It plays a pro-active role in early fire detection and firefighting. Using smart sensors, such as heat, smoke level and air quality sensor Fireplan will be able to analyse the everyday data collected and raise an alert when there is abnormality. This offers early detection of potential fire and guide household member to put out fire before the situation worsens.
+It plays a pro-active role in **early fire detection and firefighting**. Using smart sensors, such as heat, smoke level and air quality sensor, **Fireplan** will be able to **analyse the everyday data collected** and **raise an alert** when there is abnormality. This offers **early detection of potential fire** and guide household member to **put out fire before the situation worsens**.
 
 ## Pitch Video
 Insert Pitch Video here
 
 ## Architecture of Fireplan
-* This is the high-level architecture of Fireplan, illustrating the relationship between the users, the application and the back end.
+* This is the **high-level architecture** of **Fireplan**, illustrating the relationship between the **users**, the **application** and the **back end**.
 <a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture.png" align="center" height="300"></a>
 
 
@@ -62,7 +62,7 @@ pod install
 5. Run the app! Click on the 'Run' button at the top left hand corner or execute the run command using Command-R (when editing the code)
 
 ## Tests
-* We use XCTest module that is built in in Xcode to run our automated tests for our app.
+* We use **XCTest** module that is built in in Xcode to run our automated tests for our app.
 
   * <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/tree/master/Fireplan/FireplanTests">Automated Tests for Fireplan</a>
 
