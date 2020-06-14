@@ -115,7 +115,7 @@ class InfoWindow: UIView {
         bindAllGestureRecgonizers()
     }
 
-    func extractExtinguisherType(from input: String) -> String {
+    private func extractExtinguisherType(from input: String) -> String {
         var string = input
         let range = string.index(string.endIndex, offsetBy: -12)..<string.endIndex
         string.removeSubrange(range)

@@ -24,8 +24,8 @@ class ToggleFloorSwitch: UIView {
             }
         }
     }
-    let level1: UILabel
-    let level2: UILabel
+    private let level1: UILabel
+    private let level2: UILabel
     var observer: SwitchObserver?
 
     init(origin: CGPoint) {

@@ -37,9 +37,11 @@ class Room: UIView {
         roomLabel.textColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
 
         addSubview(roomLabel)
+        makeTappable()
     }
 
-    func makeTappable() {
+
+    private func makeTappable() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         addGestureRecognizer(tap)
     }
@@ -54,6 +56,7 @@ class Room: UIView {
 
     func stopFire() {
         displayLink?.invalidate()
+        fireSize = nil
         backgroundColor = nil
     }
 

@@ -11,6 +11,7 @@ import UIKit
 class FloorPlanViewController: UIViewController {
     var floorPlan1: FloorPlan!
     var floorPlan2: FloorPlan!
+    var selectedFloorPlan: FloorPlan!
     var levelSwitch: ToggleFloorSwitch!
     var rooms: [Room] = []
     var allFireTypes: [FireType] = []
@@ -36,8 +37,8 @@ class FloorPlanViewController: UIViewController {
             size: CGSize(width: iconSide, height: iconSide)))
         settingsButton.setImage(UIImage(named: "Setting"), for: .normal)
 
-        // Do any additional setup after loading the view.
         floorPlan1 = FloorPlan(frame: view.frame)
+        selectedFloorPlan = floorPlan1
         addRoomsToFloorPlan1()
         view.addSubview(floorPlan1)
         view.addSubview(homeLabel)
@@ -50,13 +51,13 @@ class FloorPlanViewController: UIViewController {
         floorPlan2 = FloorPlan(frame: view.frame)
         addRoomsToFloorPlan2()
 
-        bindGestureRecgonizers()
+        bindGestureRecognizers()
 
         setUpRooms()
         // randomlySetFire()
     }
 
-    func bindGestureRecgonizers() {
+    func bindGestureRecognizers() {
         settingsButton.addTarget(self, action: #selector(segueToSettings(_:)), for: .touchUpInside)
     }
 
@@ -71,6 +72,7 @@ class FloorPlanViewController: UIViewController {
         performSegue(withIdentifier: "toSettings", sender: sender)
     }
 
+    // To test fire, uncomment in `ViewDidLoad`
     func randomlySetFire() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             let fireSizes: [FireSize] = [.small, .medium, .large]
@@ -83,16 +85,10 @@ class FloorPlanViewController: UIViewController {
     func setUpRooms() {
         rooms.forEach {
             $0.observer = self
-            $0.makeTappable()
         }
     }
 
-    func assignFireTypes(firetypes: [FireType]) {
-        allFireTypes = firetypes
-        print(firetypes)
-    }
-
-    func addRoomsToFloorPlan2() {
+    private func addRoomsToFloorPlan2() {
         let height = UIScreen.main.bounds.height
         let width = UIScreen.main.bounds.width
         let stairsSize = CGSize(width: 65, height: 10)
@@ -201,7 +197,7 @@ class FloorPlanViewController: UIViewController {
     }
 
 
-    func addRoomsToFloorPlan1() {
+    private func addRoomsToFloorPlan1() {
         let height = UIScreen.main.bounds.height
         let width = UIScreen.main.bounds.width
         let house = Room(
@@ -322,7 +318,7 @@ class FloorPlanViewController: UIViewController {
         FloorPlanViewController.addStairs(to: floorPlan1)
     }
 
-    static func addStairs(to floorPlan: FloorPlan) {
+    private static func addStairs(to floorPlan: FloorPlan) {
         let stairsSize = CGSize(width: 65, height: 10)
 
         let stairs1Origin = CGPoint(x: 60, y: 60)
@@ -360,6 +356,7 @@ class FloorPlanViewController: UIViewController {
 
 extension FloorPlanViewController: SwitchObserver {
     func didSelectLevel1() {
+        selectedFloorPlan = floorPlan1
         floorPlan2.removeFromSuperview()
         view.addSubview(floorPlan1)
         view.bringSubviewToFront(levelSwitch)
@@ -368,6 +365,7 @@ extension FloorPlanViewController: SwitchObserver {
     }
 
     func didSelectLevel2() {
+        selectedFloorPlan = floorPlan2
         floorPlan1.removeFromSuperview()
         view.addSubview(floorPlan2)
         view.bringSubviewToFront(levelSwitch)

@@ -17,7 +17,7 @@ class LoadingBar: UIView {
             loadingBar.backgroundColor = loadingBarColor
         }
     }
-    var sliderColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1) {
+    var sliderColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1) {
         didSet {
             slider.backgroundColor = sliderColor
         }

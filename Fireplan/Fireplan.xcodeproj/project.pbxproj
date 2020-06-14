@@ -17,7 +17,6 @@
 		376274202493C3F800149179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3762741E2493C3F800149179 /* Main.storyboard */; };
 		376274222493C3FC00149179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376274212493C3FC00149179 /* Assets.xcassets */; };
 		376274252493C3FC00149179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376274232493C3FC00149179 /* LaunchScreen.storyboard */; };
-		376274302493C3FD00149179 /* FireplanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762742F2493C3FD00149179 /* FireplanTests.swift */; };
 		3762743B2493C3FD00149179 /* FireplanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762743A2493C3FD00149179 /* FireplanUITests.swift */; };
 		376274492493C6F000149179 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376274482493C6F000149179 /* Room.swift */; };
 		3762744B2493CA8C00149179 /* FloorPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762744A2493CA8C00149179 /* FloorPlan.swift */; };
@@ -37,6 +36,37 @@
 		3787E51B249530E5003A8169 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51A249530E5003A8169 /* Keys.swift */; };
 		3787E5232495B5B3003A8169 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5222495B5B3003A8169 /* Sensor.swift */; };
 		3787E5252495B5E6003A8169 /* SensorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5242495B5E6003A8169 /* SensorObserver.swift */; };
+		3787E5282495CE61003A8169 /* RoomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5272495CE61003A8169 /* RoomTests.swift */; };
+		3787E5292495CEBF003A8169 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376274482493C6F000149179 /* Room.swift */; };
+		3787E52A2495CF10003A8169 /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5042494BAB8003A8169 /* RoomType.swift */; };
+		3787E52B2495CF3D003A8169 /* SensorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5242495B5E6003A8169 /* SensorObserver.swift */; };
+		3787E52C2495CF4A003A8169 /* FireSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E50E249507FA003A8169 /* FireSize.swift */; };
+		3787E52D2495CF5B003A8169 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5222495B5B3003A8169 /* Sensor.swift */; };
+		3787E52E2495CF5E003A8169 /* RoomObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5082494C6AB003A8169 /* RoomObserver.swift */; };
+		3787E5302495CF69003A8169 /* FloorPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762741C2493C3F800149179 /* FloorPlanViewController.swift */; };
+		3787E5312495CF6B003A8169 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51024950AE1003A8169 /* SettingsViewController.swift */; };
+		3787E5322495CF6E003A8169 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5022494B691003A8169 /* JSONParser.swift */; };
+		3787E5332495CF6F003A8169 /* SettingsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51224951641003A8169 /* SettingsBar.swift */; };
+		3787E5342495CF71003A8169 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51624952070003A8169 /* LoadingBar.swift */; };
+		3787E5352495CF73003A8169 /* FloorPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762744A2493CA8C00149179 /* FloorPlan.swift */; };
+		3787E5362495CF7B003A8169 /* FireType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5002494B63B003A8169 /* FireType.swift */; };
+		3787E5372495CF7F003A8169 /* AlertInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51824952732003A8169 /* AlertInfoWindow.swift */; };
+		3787E5382495CF82003A8169 /* InfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E4FE2494B308003A8169 /* InfoWindow.swift */; };
+		3787E5392495CF84003A8169 /* AlertWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5062494BE77003A8169 /* AlertWindow.swift */; };
+		3787E53A2495CF86003A8169 /* AlertObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E50A2494C76C003A8169 /* AlertObserver.swift */; };
+		3787E53B2495CF8A003A8169 /* ToggleFloorSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375086642494A6D100023EFB /* ToggleFloorSwitch.swift */; };
+		3787E53C2495CF8C003A8169 /* SwitchObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375086662494A98E00023EFB /* SwitchObserver.swift */; };
+		3787E53E2495CFC2003A8169 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E51A249530E5003A8169 /* Keys.swift */; };
+		3787E5412495D280003A8169 /* FloorPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5402495D280003A8169 /* FloorPlanTests.swift */; };
+		3787E5432495D313003A8169 /* JSONParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5422495D313003A8169 /* JSONParserTests.swift */; };
+		3787E5462495D443003A8169 /* SettingsBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5452495D443003A8169 /* SettingsBarTests.swift */; };
+		3787E5482495D551003A8169 /* LoadingBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5472495D551003A8169 /* LoadingBarTests.swift */; };
+		3787E54A2495D6DF003A8169 /* FireTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5492495D6DF003A8169 /* FireTypeTests.swift */; };
+		3787E54D2495D8A4003A8169 /* AlertInfoWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E54C2495D8A4003A8169 /* AlertInfoWindowTests.swift */; };
+		3787E5502495DA23003A8169 /* InfoWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E54F2495DA23003A8169 /* InfoWindowTests.swift */; };
+		3787E5522495DC2A003A8169 /* AlertWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5512495DC2A003A8169 /* AlertWindowTests.swift */; };
+		3787E5542495DD56003A8169 /* ToggleFloorSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5532495DD56003A8169 /* ToggleFloorSwitchTests.swift */; };
+		3787E5572495DF65003A8169 /* FloorPlanViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E5562495DF65003A8169 /* FloorPlanViewControllerTests.swift */; };
 		71B841AEC4EC5C95EF67124B /* Pods_Fireplan_FireplanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6981A3E085A0AAFBADC13765 /* Pods_Fireplan_FireplanUITests.framework */; };
 		975303A6839B7F6A09CAE1BF /* Pods_FireplanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1542FC3E8D3E34116FC9727 /* Pods_FireplanTests.framework */; };
 /* End PBXBuildFile section */
@@ -72,7 +102,6 @@
 		376274242493C3FC00149179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		376274262493C3FC00149179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3762742B2493C3FD00149179 /* FireplanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireplanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3762742F2493C3FD00149179 /* FireplanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireplanTests.swift; sourceTree = "<group>"; };
 		376274312493C3FD00149179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		376274362493C3FD00149179 /* FireplanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireplanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3762743A2493C3FD00149179 /* FireplanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireplanUITests.swift; sourceTree = "<group>"; };
@@ -95,6 +124,18 @@
 		3787E51A249530E5003A8169 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		3787E5222495B5B3003A8169 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
 		3787E5242495B5E6003A8169 /* SensorObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorObserver.swift; sourceTree = "<group>"; };
+		3787E5262495CE61003A8169 /* FireplanTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FireplanTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3787E5272495CE61003A8169 /* RoomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTests.swift; sourceTree = "<group>"; };
+		3787E5402495D280003A8169 /* FloorPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlanTests.swift; sourceTree = "<group>"; };
+		3787E5422495D313003A8169 /* JSONParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParserTests.swift; sourceTree = "<group>"; };
+		3787E5452495D443003A8169 /* SettingsBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBarTests.swift; sourceTree = "<group>"; };
+		3787E5472495D551003A8169 /* LoadingBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBarTests.swift; sourceTree = "<group>"; };
+		3787E5492495D6DF003A8169 /* FireTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTypeTests.swift; sourceTree = "<group>"; };
+		3787E54C2495D8A4003A8169 /* AlertInfoWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertInfoWindowTests.swift; sourceTree = "<group>"; };
+		3787E54F2495DA23003A8169 /* InfoWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWindowTests.swift; sourceTree = "<group>"; };
+		3787E5512495DC2A003A8169 /* AlertWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWindowTests.swift; sourceTree = "<group>"; };
+		3787E5532495DD56003A8169 /* ToggleFloorSwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFloorSwitchTests.swift; sourceTree = "<group>"; };
+		3787E5562495DF65003A8169 /* FloorPlanViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlanViewControllerTests.swift; sourceTree = "<group>"; };
 		3CA238B387A99E3B3302CE64 /* Pods-Fireplan-FireplanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fireplan-FireplanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fireplan-FireplanUITests/Pods-Fireplan-FireplanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		462366CA65D9C0CA1176C263 /* Pods_Fireplan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fireplan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E731000FE8C69D79460EF0 /* Pods-FireplanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireplanTests.debug.xcconfig"; path = "Target Support Files/Pods-FireplanTests/Pods-FireplanTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,8 +201,6 @@
 			children = (
 				376274182493C3F800149179 /* AppDelegate.swift */,
 				3762741A2493C3F800149179 /* SceneDelegate.swift */,
-				3787E5222495B5B3003A8169 /* Sensor.swift */,
-				3787E5242495B5E6003A8169 /* SensorObserver.swift */,
 				3787E51E249533BF003A8169 /* ViewController */,
 				3787E51D249533B4003A8169 /* Util */,
 				3787E51F249533DA003A8169 /* Room */,
@@ -181,8 +220,14 @@
 		3762742E2493C3FD00149179 /* FireplanTests */ = {
 			isa = PBXGroup;
 			children = (
-				3762742F2493C3FD00149179 /* FireplanTests.swift */,
 				376274312493C3FD00149179 /* Info.plist */,
+				3787E5562495DF65003A8169 /* FloorPlanViewControllerTests.swift */,
+				3787E5552495DF50003A8169 /* Switch */,
+				3787E54E2495DA0E003A8169 /* Window */,
+				3787E54B2495D891003A8169 /* Constants */,
+				3787E5442495D435003A8169 /* Util */,
+				3787E53F2495D271003A8169 /* Room */,
+				3787E5262495CE61003A8169 /* FireplanTests-Bridging-Header.h */,
 			);
 			path = FireplanTests;
 			sourceTree = "<group>";
@@ -218,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				3787E5022494B691003A8169 /* JSONParser.swift */,
+				3787E5222495B5B3003A8169 /* Sensor.swift */,
+				3787E5242495B5E6003A8169 /* SensorObserver.swift */,
 				3787E51224951641003A8169 /* SettingsBar.swift */,
 				3787E51624952070003A8169 /* LoadingBar.swift */,
 			);
@@ -262,6 +309,51 @@
 				372F740D24949A9F00E39E47 /* Database.swift */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		3787E53F2495D271003A8169 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				3787E5272495CE61003A8169 /* RoomTests.swift */,
+				3787E5402495D280003A8169 /* FloorPlanTests.swift */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		3787E5442495D435003A8169 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3787E5422495D313003A8169 /* JSONParserTests.swift */,
+				3787E5452495D443003A8169 /* SettingsBarTests.swift */,
+				3787E5472495D551003A8169 /* LoadingBarTests.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3787E54B2495D891003A8169 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3787E5492495D6DF003A8169 /* FireTypeTests.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3787E54E2495DA0E003A8169 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				3787E54C2495D8A4003A8169 /* AlertInfoWindowTests.swift */,
+				3787E5512495DC2A003A8169 /* AlertWindowTests.swift */,
+				3787E54F2495DA23003A8169 /* InfoWindowTests.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		3787E5552495DF50003A8169 /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				3787E5532495DD56003A8169 /* ToggleFloorSwitchTests.swift */,
+			);
+			path = Switch;
 			sourceTree = "<group>";
 		};
 		51EB4122C5DBE6407EF718BF /* Frameworks */ = {
@@ -363,6 +455,7 @@
 					};
 					3762742A2493C3FD00149179 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = 376274142493C3F800149179;
 					};
 					376274352493C3FD00149179 = {
@@ -557,7 +650,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376274302493C3FD00149179 /* FireplanTests.swift in Sources */,
+				3787E5392495CF84003A8169 /* AlertWindow.swift in Sources */,
+				3787E5412495D280003A8169 /* FloorPlanTests.swift in Sources */,
+				3787E5342495CF71003A8169 /* LoadingBar.swift in Sources */,
+				3787E5292495CEBF003A8169 /* Room.swift in Sources */,
+				3787E5432495D313003A8169 /* JSONParserTests.swift in Sources */,
+				3787E52D2495CF5B003A8169 /* Sensor.swift in Sources */,
+				3787E54D2495D8A4003A8169 /* AlertInfoWindowTests.swift in Sources */,
+				3787E53E2495CFC2003A8169 /* Keys.swift in Sources */,
+				3787E5302495CF69003A8169 /* FloorPlanViewController.swift in Sources */,
+				3787E5322495CF6E003A8169 /* JSONParser.swift in Sources */,
+				3787E5352495CF73003A8169 /* FloorPlan.swift in Sources */,
+				3787E5572495DF65003A8169 /* FloorPlanViewControllerTests.swift in Sources */,
+				3787E5462495D443003A8169 /* SettingsBarTests.swift in Sources */,
+				3787E5312495CF6B003A8169 /* SettingsViewController.swift in Sources */,
+				3787E52C2495CF4A003A8169 /* FireSize.swift in Sources */,
+				3787E5482495D551003A8169 /* LoadingBarTests.swift in Sources */,
+				3787E53C2495CF8C003A8169 /* SwitchObserver.swift in Sources */,
+				3787E5542495DD56003A8169 /* ToggleFloorSwitchTests.swift in Sources */,
+				3787E52B2495CF3D003A8169 /* SensorObserver.swift in Sources */,
+				3787E53A2495CF86003A8169 /* AlertObserver.swift in Sources */,
+				3787E5282495CE61003A8169 /* RoomTests.swift in Sources */,
+				3787E52E2495CF5E003A8169 /* RoomObserver.swift in Sources */,
+				3787E54A2495D6DF003A8169 /* FireTypeTests.swift in Sources */,
+				3787E5372495CF7F003A8169 /* AlertInfoWindow.swift in Sources */,
+				3787E5332495CF6F003A8169 /* SettingsBar.swift in Sources */,
+				3787E5502495DA23003A8169 /* InfoWindowTests.swift in Sources */,
+				3787E53B2495CF8A003A8169 /* ToggleFloorSwitch.swift in Sources */,
+				3787E5362495CF7B003A8169 /* FireType.swift in Sources */,
+				3787E52A2495CF10003A8169 /* RoomType.swift in Sources */,
+				3787E5522495DC2A003A8169 /* AlertWindowTests.swift in Sources */,
+				3787E5382495CF82003A8169 /* InfoWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +885,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YRGJRHD4K;
 				INFOPLIST_FILE = FireplanTests/Info.plist;
@@ -773,6 +897,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hoholyin.FireplanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FireplanTests/FireplanTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fireplan.app/Fireplan";
@@ -785,6 +911,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YRGJRHD4K;
 				INFOPLIST_FILE = FireplanTests/Info.plist;
@@ -796,6 +923,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hoholyin.FireplanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FireplanTests/FireplanTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fireplan.app/Fireplan";
