@@ -1,4 +1,5 @@
 # Fireplan
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Assets/FireplanLogo.png" align="center" height="150"></a>
 
 ## Content
 1. [Team Lions](#team-lions) 
@@ -12,9 +13,9 @@
 1. [IBM Cloud Resource](#ibm-cloud-resource) 
 
 ## Team Lions
-By Lee Yin Jie, Tan Ying, Ho Hol Yin
+Lee Yin Jie, Tan Ying, Ho Hol Yin
 
-We are a group of students from **SUTD** (Architecture) and **NUS** (Industrial Design and Computer Science)
+We are a group of students from **SUTD** (Architecture) and **NUS** (Industrial Design and Computer Science).
 
 ## Problem Description
 Fires are a key concern of the SCDF. Being a phenomenon that occurs almost instantaneously without any warning and has a potential to quickly spiral out of control, we identified such situations to require an immediate response. We intend to use technology to make sense of data collected from state-of-the-art sensors and use these data to educate and inform people.
@@ -26,23 +27,23 @@ Our technological solution: **Fireplan**.
 It plays a pro-active role in **early fire detection and firefighting**. Using smart sensors, such as heat, smoke level and air quality sensor, **Fireplan** will be able to **analyse the everyday data collected** and **raise an alert** when there is abnormality. This offers **early detection of potential fire** and guide household member to **put out fire before the situation worsens**.
 
 ## Pitch Video
-Insert Pitch Video here
+[![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
 
 ## Architecture of Fireplan
 * This is the **high-level architecture** of **Fireplan**, illustrating the relationship between the **users**, the **application** and the **back end**.
 
 <a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture.png" align="center" height="300"></a>
 
-* **Fireplan** was created in 48 hours, of which the engineering process include elements of:
+* **Fireplan** is an iOS app that was created in 48 hours, of which the engineering process include elements of:
   * Test-driven development
   * Application of useful design patterns (including the Observer pattern, Facade pattern, etc.)
   * Communication aspect with designers on requirements of application
 
 ## Detailed Solution
-d) A hyperlink to your detailed solution* (Long description of your solution)
+* <a href="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/DESCRIPTION.md">Fireplan Detailed Solution</a>
 
 ## Timeline
-<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/timeline.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/timeline.jpg" align="center" height="500"></a>
 
 ## Getting Started
 
