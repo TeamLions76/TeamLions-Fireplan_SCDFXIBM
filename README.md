@@ -30,6 +30,7 @@ Insert Pitch Video here
 
 ## Architecture of Fireplan
 * This is the **high-level architecture** of **Fireplan**, illustrating the relationship between the **users**, the **application** and the **back end**.
+
 <a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture.png" align="center" height="300"></a>
 
 
