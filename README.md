@@ -10,13 +10,19 @@ Fires are a key concern of the SCDF. Being a phenomenon that occurs almost insta
 
 Our technological solution: **Fireplan**.
 
-**Fireplan** is a fire awareness and detection app with in households. This app also plays an educational role in informing members of the household the potential fire hotspots in their house and the respective extinguishers that they might require.
+**Fireplan** is a fire awareness and detection app with in households. On normal days, it is an educational tool which inform members of the household the potential fire hotspots in their house and the respective extinguishers that they might require. 
+
+It plays a pro-active role in early fire detection and firefighting. Using smart sensors, such as heat, smoke level and air quality sensor Fireplan will be able to analyse the everyday data collected and raise an alert when there is abnormality. This offers early detection of potential fire and guide household member to put out fire before the situation worsens.
 
 ## Pitch Video
 Insert Pitch Video here
 
 ## Architecture of Fireplan
-c) The architecture of your proposed solution
+This is the high-level architecture of 
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture1.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture2.jpg" align="center" height="300"></a>
+<a href="url"><img src="https://github.com/TeamLions76/TeamLions-Fireplan_SCDFXIBM/blob/master/Fireplan/Diagrams/architecture3.jpg" align="center" height="300"></a>
+
 
 ## Detailed Solution
 d) A hyperlink to your detailed solution* (Long description of your solution)
